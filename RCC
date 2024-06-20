@@ -1,0 +1,59 @@
+[RoutingRule]
+#9by 规则
+DOMAIN-KEYWORD,baidu,PROXY
+DOMAIN-KEYWORD,msdk,DIRECT
+DOMAIN-KEYWORD,weixin,DIRECT
+DOMAIN-KEYWORD,jiazhang,DIRECT
+DOMAIN-KEYWORD,paojiaoyun,DIRECT
+DOMAIN-KEYWORD,llua,DIRECT
+DOMAIN-KEYWORD,t3yanzheng,DIRECT
+DOMAIN,down.anticheatexpert.com,PROXY
+DOMAIN-KEYWORD,anticheatexpert,PROXY
+DOMAIN,cs.mbgame.gamesafe.qq.com,PROXY
+DOMAIN,ipv6.mainconn.gamesafe.qq.com,PROXY
+DOMAIN,cs.mbgame.anticheatexpert.com,PROXY
+DOMAIN,cs.mainconn.gamesafe.qq.com,PROXY
+DOMAIN,nj.cschannel.anticheatexpert.com,PROXY
+DOMAIN,cschannel.anticheatexpert.com,PROXY
+IP-CIDR,129.226.102.0/24,PROXY
+IP-CIDR,180.109.171.0/24,PROXY
+IP-CIDR,36.155.249.0/24,PROXY
+IP-CIDR,117.89.177.0/24,PROXY
+IP-CIDR,122.96.96.0/24,PROXY
+IP-CIDR,59.83.207.0/24,PROXY
+IP-CIDR,43.137.190.0/24,PROXY
+IP-CIDR,129.226.103.0/24,PROXY
+IP-CIDR,180.102.211.0/24,PROXY
+IP-CIDR,36.155.202.0/24,PROXY
+IP-CIDR,175.27.204.0/24,PROXY
+IP-CIDR,175.27.203.0/24,PROXY
+IP-CIDR,36.155.186.0/24,PROXY
+IP-CIDR,182.50.10.0/24,PROXY
+IP-CIDR,109.244.228.0/24,PROXY
+IP-CIDR,36.155.228.0/24,PROXY
+IP-CIDR,222.94.109.0/24,PROXY
+IP-CIDR,36.155.251.0/24,PROXY
+IP-CIDR,182.254.116.117/32,DIRECT
+PORT,10012,PROXY
+FINAL,DIRECT
+[RoutingDomainStrategy]
+AsIs
+[FreedomDomainStrategy]
+AsIs
+[LocalPolicy]
+bufferSize = 4096
+connIdle = 300
+downlinkOnly = 0
+handshake = 4
+uplinkOnly = 0
+[DnsServer]
+114.114.114.114
+[DnsRule]
+[DnsHost]
+[DnsClientIp]
+[Log]
+loglevel = none
+[PerAppVpn]
+[PerAppMode]
+[PerAppAllow]
+[PerAppDisallow
